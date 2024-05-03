@@ -80,7 +80,7 @@ class _VideoListPageState extends State<VideoListPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Video List'),
-        automaticallyImplyLeading: false,
+        // automaticallyImplyLeading: false,
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: Center(

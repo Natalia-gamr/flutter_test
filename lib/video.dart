@@ -28,7 +28,7 @@ class _VideoPageState extends State<VideoPage> {
   @override
   void initState() {
     super.initState();
-    double _aspectRatio = 16 / 9;
+    double aspectRatio = 16 / 9;
 
     final token = widget.token.split('"')[1];
 
@@ -59,7 +59,7 @@ class _VideoPageState extends State<VideoPage> {
         DeviceOrientation.portraitDown
       ],
       videoPlayerController: _controller,
-      aspectRatio: _aspectRatio,
+      aspectRatio: aspectRatio,
       autoInitialize: true,
       autoPlay: true,
       showControls: true

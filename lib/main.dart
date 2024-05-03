@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/auth.dart';
+import 'package:test_app/home_page.dart';
 import 'package:test_app/video_list.dart';
 
 void main() {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
-      home: const VideoListPage(token: '"123"'),
+      home: const AuthPage(),
     );
   }
 }

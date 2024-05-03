@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/retry.dart';
+import 'package:test_app/home_page.dart';
 import 'package:test_app/video_list.dart';
 
 
@@ -61,8 +62,10 @@ class _AuthPageState extends State<AuthPage> {
         setState(() {
           token = jsonDecode(userAuthRes.body);
         });
-        Navigator.push(context,  MaterialPageRoute(builder: (BuildContext context) => VideoListPage(token: token)));
+        Navigator.push(context,  MaterialPageRoute(builder: (BuildContext context) => HomePage(token: '"123"')));
       } else {
+        Navigator.push(context,  MaterialPageRoute(builder: (BuildContext context) => HomePage(token: '"123"')));
+
         setState(() {
           _err = userAuthRes.statusCode.toString();
         });
